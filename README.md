@@ -17,7 +17,7 @@ Run `server.py` with Python:
 
 The server is now available at [127.0.0.1:8080](http://127.0.0.1:8080/).
 
-![](https://raw.githubusercontent.com/earldouglas/hello-python-web/7b8372497416ab95378f6cdc5f01683ea9e92f23/readme/screenshot.png)
+![](https://raw.githubusercontent.com/earldouglas/hello-python-web/c3a5188be0ed91c15746b5c4f78f1e82766950d6/readme/screenshot.png)
 
 ## Usage with Docker
 
