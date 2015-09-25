@@ -7,6 +7,6 @@ RUN pip install Flask
 
 COPY . /hello-python-web
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["python", "/hello-python-web/server.py"]
