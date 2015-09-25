@@ -12,10 +12,10 @@ Run `server.py` with Python:
 
 ```
 # python server.py
- * Running on http://127.0.0.1/ (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 ```
 
-The server is now available at [127.0.0.1](http://127.0.0.1/).
+The server is now available at [127.0.0.1:8080](http://127.0.0.1:8080/).
 
 ![](https://raw.githubusercontent.com/earldouglas/hello-python-web/7b8372497416ab95378f6cdc5f01683ea9e92f23/readme/screenshot.png)
 
@@ -39,8 +39,8 @@ debian            sid     e7d52d7d94ef  2 weeks ago    126.5 MB
 Run *hello-python-web* with `docker run`:
 
 ```
-$ docker run -p 8080:80 hello-python-web
- * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+$ docker run -p 8080:8080 hello-python-web
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
 ```
 
 The server is now available at [127.0.0.1:8080](http://127.0.0.1:8080/).
