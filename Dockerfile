@@ -1,12 +1,7 @@
-FROM debian:sid
-
-RUN apt-get -y update
-RUN apt-get install -y python python-pip
-
-RUN pip install Flask
+FROM python:2.7
 
 COPY . /hello-python-web
 
-EXPOSE 8080
+RUN pip install -r /hello-python-web/requirements.txt
 
 CMD ["python", "/hello-python-web/server.py"]

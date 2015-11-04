@@ -1,9 +1,9 @@
 ## Prerequisites
 
-Install Flask:
+Install dependencies (e.g. Flask):
 
 ```
-$ pip install --user Flask
+$ pip install --user -r requirements.txt
 ```
 
 ## Usage
