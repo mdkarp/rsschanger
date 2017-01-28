@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, make_response
 import feedparser
 app = Flask(__name__)
 
@@ -15,7 +15,10 @@ def rsschanger():
     thisfeed = feedparser.parse(rss_url)
     entries = thisfeed['entries']
 
-    return render_template('rss.xml')
+    r = make_response(render_template('rss.xml', feed=thisfeed))
+    r.headers.set('Content-type', "text/xml")
+    return r
+
 
 if __name__ == "__main__":
     app.run(host = '0.0.0.0', port = 8080)
