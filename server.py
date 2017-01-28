@@ -13,9 +13,8 @@ def rsschanger():
         return redirect(url_for('hello'))
 
     thisfeed = feedparser.parse(rss_url)
-    entries = thisfeed['entries']
 
-    r = make_response(render_template('rss.xml', feed=thisfeed))
+    r = make_response(render_template('rss.xml', feed=thisfeed['feed']))
     r.headers.set('Content-type', "text/xml")
     return r
 

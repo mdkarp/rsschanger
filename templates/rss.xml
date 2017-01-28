@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Patife.com</title>
-        <link>http://www.patife.com/</link>
+        <title>{{ feed.title }}</title>
+        <link></link>
         <description>Startups. I can't help myself.</description>
     </channel>
 </rss>
