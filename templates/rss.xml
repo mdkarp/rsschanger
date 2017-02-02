@@ -18,8 +18,11 @@
               <link>{{ entry.link }}</link>
               <comments>{{ entry.comments }}</comments>
               <pubDate>{{ entry.published }}</pubDate>
-              <dc:creator>{{ entry.author }}</dc:creator>
+
               <author>{{ entry.author }}</author>
+              {% for author in entry.authors %}
+                <dc:creator>{{ author.name }}</dc:creator>
+              {% endfor %}
               {% for link in entry.links %}
                   {% if link.rel == "enclosure" %}
                     <enclosure url="{{ link.href }}" type="{{ link.type }}"/>
